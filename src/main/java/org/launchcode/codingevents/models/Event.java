@@ -18,6 +18,7 @@ public class Event {
     private String description;
 
     @Email(message = "Invalid email. Try again!")
+    @NotBlank
     private String contactEmail;
 
     public Event(String name, String description, String contactEmail) {
